@@ -31,7 +31,7 @@ for filename in sorted(os.listdir(image_dir)):
     if not filename.endswith(".png"):
         continue
 
-    print(f"🔄 Verarbeite Bild: {filename}")
+    print(f"Verarbeite Bild: {filename}")
 
     image_path = os.path.join(image_dir, filename)
     img = cv2.imread(image_path)
