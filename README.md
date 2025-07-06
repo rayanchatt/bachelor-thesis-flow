@@ -13,7 +13,6 @@ Ziel ist eine **GPU-freie** Auswertungskette, die
 > **Kurzübersicht**  
 > – ~95 % mAP<sub>50</sub> auf der Trainingsebene  
 > – Signifikante Divergenz-Minima vor und Divergenz-Maxima nach der Mitose  
-> – Reine CPU-Laufzeit: < 12 min pro 122-Frame-Stack (M-Serie-MacBook)
 
 ---
 
