@@ -24,7 +24,6 @@ The goal is a **GPU-free** analysis pipeline that
 | `confidence.py`                  | Computes adaptive confidence thresholds via KDE & ROC. |
 | `heatmap.py`                     | Renders density heatmaps of mitosis positions. |
 | `iou.py`                         | Helper functions for intersection-over-union matching along the z-axis. |
-| `main_example_images.py`         | Minimal example to demo the pipeline on sample frames. |
 | `match_labels.py`                | Links bounding boxes temporally & axially and assigns track IDs. |
 | `rgbcode.py`                     | Stacks three z-layers into RGB tensor frames. |
 | `timelagcorrection_div.py`       | Lag analysis: confidence ↔ divergence. |
