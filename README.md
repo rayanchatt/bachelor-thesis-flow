@@ -72,4 +72,4 @@ The repository includes a short example video that illustrates where mitosis eve
 
 - `assets/cell_division_detected.mp4` – **Mitosis detection:** visualization of the time-lapse sequence with YOLOv5s bounding boxes over detected cell divisions.
 
-[▶ Watch mitosis detection](media/cell_division_detected.mp4)
+[▶ Watch mitosis detection](assets/cell_division_detected.mp4)
