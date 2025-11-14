@@ -70,7 +70,7 @@ The goal is a **GPU-free** analysis pipeline that
 
 The repository includes a short example video that illustrates where mitosis events are detected:
 
-- `media/cell_division_detected.mp4` – **Mitosis detection:** visualization of the time-lapse sequence with YOLOv5s bounding boxes over detected cell divisions.
+- `assets/cell_division_detected.mp4` – **Mitosis detection:** visualization of the time-lapse sequence with YOLOv5s bounding boxes over detected cell divisions.
 
 Embed in Markdown, for example:
 
