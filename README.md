@@ -75,4 +75,4 @@ The repository includes a short example video that illustrates where mitosis eve
 Embed in Markdown, for example:
 
 ```markdown
-[▶ Watch mitosis detection](media/cell_division_detected.mp4)
+[▶ Watch mitosis detection](assets/cell_division_detected.mp4)
