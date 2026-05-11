@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "bachelor-thesis-flow: CPU-based pipeline for mitosis detection and divergence analysis"
+message: "If you use this software, please cite it using the metadata from this file."
+type: software
+authors:
+  - given-names: Rayan
+    family-names: Chatt
+    orcid: "https://orcid.org/0009-0005-3800-7421"
+    affiliation: "Heinrich Heine University Düsseldorf, Institut für Biomedizinische Physik"
+repository-code: "https://github.com/rayanchatt/bachelor-thesis-flow"
+url: "https://github.com/rayanchatt/bachelor-thesis-flow"
+abstract: >-
+  A GPU-free analysis pipeline that detects mitosis events in brightfield
+  time-lapse microscopy sequences using a compact YOLOv5s detector and
+  quantifies their mechanical neighbourhood via dense Farnebäck optical-flow
+  fields turned into divergence and magnitude maps (DefMaps).
+keywords:
+  - mitosis-detection
+  - optical-flow
+  - yolov5
+  - tissue-mechanics
+  - bioimage-analysis
+  - bachelor-thesis
+license: CC-BY-4.0
+version: 0.1.0  # x-release-please-version
+date-released: "2026-05-11"
