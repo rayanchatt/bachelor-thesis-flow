@@ -14,9 +14,7 @@ from btflow.plots.iou_boxplot import plot_iou_boxplot
 def test_confidence_kde_writes_png(tmp_path: Path) -> None:
     preds = tmp_path / "predictions"
     preds.mkdir()
-    pd.DataFrame({"Confidence": [0.6, 0.7, 0.8]}).to_csv(
-        preds / "predictions_2_6.csv", index=False
-    )
+    pd.DataFrame({"Confidence": [0.6, 0.7, 0.8]}).to_csv(preds / "predictions_2_6.csv", index=False)
     pd.DataFrame({"Confidence": [0.5, 0.55, 0.65]}).to_csv(
         preds / "predictions_3_6.csv", index=False
     )

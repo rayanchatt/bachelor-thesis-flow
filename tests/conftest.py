@@ -10,11 +10,11 @@ import matplotlib
 
 matplotlib.use("Agg")  # Headless backend — must be set before any pyplot import.
 
-from pathlib import Path  # noqa: E402
+from pathlib import Path
 
-import cv2  # noqa: E402
-import numpy as np  # noqa: E402
-import pytest  # noqa: E402
+import cv2
+import numpy as np
+import pytest
 
 
 @pytest.fixture

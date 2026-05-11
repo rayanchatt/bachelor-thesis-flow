@@ -86,6 +86,6 @@ lagcorr_*/
 
 # Local figure dumps
 *.png
-!assets/*.png
+!assets/**/*.png
 !docs/**/*.png
 !tests/fixtures/**/*.png

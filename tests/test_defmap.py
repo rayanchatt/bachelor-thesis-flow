@@ -33,9 +33,7 @@ def test_invalid_metric_raises(tmp_path: Path) -> None:
         build_defmap_stack(tmp_path, tmp_path, metric="bogus")
 
 
-def test_div_stack_detects_rightward_motion(
-    synthetic_zstack_dir: Path, tmp_path: Path
-) -> None:
+def test_div_stack_detects_rightward_motion(synthetic_zstack_dir: Path, tmp_path: Path) -> None:
     """A blob moving rightward should produce sign-flipping divergence around
     its center: positive on the leading edge, negative on the trailing edge.
     """
