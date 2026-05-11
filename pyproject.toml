@@ -1,0 +1,121 @@
+[build-system]
+requires = ["hatchling>=1.21"]
+build-backend = "hatchling.build"
+
+[project]
+name = "btflow"
+version = "0.1.0"
+description = "CPU-based pipeline for mitosis detection and divergence analysis from brightfield time-lapse microscopy."
+readme = "README.md"
+license = { text = "CC-BY-4.0" }
+requires-python = ">=3.11"
+authors = [
+  { name = "Rayan Chatt" },
+]
+keywords = [
+  "mitosis-detection",
+  "optical-flow",
+  "yolov5",
+  "tissue-mechanics",
+  "bioimage-analysis",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved",
+  "Operating System :: MacOS",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Image Processing",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+  "numpy>=1.26",
+  "opencv-python>=4.8",
+  "pandas>=2.1",
+  "matplotlib>=3.8",
+  "seaborn>=0.13",
+  "tqdm>=4.66",
+  "scipy>=1.11",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "pytest-cov>=4.1",
+  "ruff>=0.5",
+  "mypy>=1.10",
+  "pre-commit>=3.6",
+  "types-tqdm",
+]
+
+[project.urls]
+Homepage = "https://github.com/rayanchatt/bachelor-thesis-flow"
+Repository = "https://github.com/rayanchatt/bachelor-thesis-flow"
+Issues = "https://github.com/rayanchatt/bachelor-thesis-flow/issues"
+
+[project.scripts]
+btflow = "btflow.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/btflow"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+  "E",   # pycodestyle errors
+  "W",   # pycodestyle warnings
+  "F",   # pyflakes
+  "I",   # isort
+  "B",   # flake8-bugbear
+  "UP",  # pyupgrade
+  "SIM", # flake8-simplify
+  "RUF", # ruff-specific
+  "N",   # pep8-naming
+  "C4",  # comprehensions
+]
+ignore = [
+  "E501",  # line too long (handled by formatter)
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["N802", "N803", "N806"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+files = ["src/btflow"]
+ignore_missing_imports = true
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+module = ["cv2.*", "seaborn.*", "scipy.*", "matplotlib.*", "tqdm.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-ra --strict-markers --strict-config"
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.coverage.run]
+source = ["src/btflow"]
+branch = true
+
+[tool.coverage.report]
+exclude_lines = [
+  "pragma: no cover",
+  "if __name__ == .__main__.:",
+  "raise NotImplementedError",
+]
+show_missing = true
