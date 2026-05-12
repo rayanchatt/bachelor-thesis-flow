@@ -4,6 +4,7 @@
 
 [![CI](https://github.com/rayanchatt/bachelor-thesis-flow/actions/workflows/ci.yml/badge.svg)](https://github.com/rayanchatt/bachelor-thesis-flow/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/rayanchatt/bachelor-thesis-flow/actions/workflows/codeql.yml/badge.svg)](https://github.com/rayanchatt/bachelor-thesis-flow/actions/workflows/codeql.yml)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/rayanchatt/bachelor-thesis-flow/badge)](https://securityscorecards.dev/viewer/?uri=github.com/rayanchatt/bachelor-thesis-flow)
 [![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12-blue)](https://www.python.org/)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
