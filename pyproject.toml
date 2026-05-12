@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "btflow"
-version = "0.1.0"
+version = "0.2.0"
 description = "CPU-based pipeline for mitosis detection and divergence analysis from brightfield time-lapse microscopy."
 readme = "README.md"
 license = { text = "CC-BY-4.0" }
