@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.1](https://github.com/rayanchatt/bachelor-thesis-flow/compare/v0.2.0...v0.2.1) (2026-05-12)
+
+
+### Bug Fixes
+
+* **ci:** align Scorecard workflow with OSSF canonical template ([3995391](https://github.com/rayanchatt/bachelor-thesis-flow/commit/39953914995fef74a22f7e281b1cc212ee0961ab))
+* **ci:** align Scorecard workflow with OSSF canonical template ([484002a](https://github.com/rayanchatt/bachelor-thesis-flow/commit/484002ada1387c7947af8124ca69db61547e19f0))
+
 ## [0.2.0](https://github.com/rayanchatt/bachelor-thesis-flow/compare/v0.1.0...v0.2.0) (2026-05-11)
 
 
