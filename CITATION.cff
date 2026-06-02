@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "bachelor-thesis-flow: CPU-based pipeline for mitosis detection and divergence analysis"
+title: "bachelor-thesis-flow: CPU-based optical-flow analysis of mitosis events"
 message: "If you use this software, please cite it using the metadata from this file."
 type: software
 authors:
@@ -10,10 +10,12 @@ authors:
 repository-code: "https://github.com/rayanchatt/bachelor-thesis-flow"
 url: "https://github.com/rayanchatt/bachelor-thesis-flow"
 abstract: >-
-  A GPU-free analysis pipeline that detects mitosis events in brightfield
-  time-lapse microscopy sequences using a compact YOLOv5s detector and
-  quantifies their mechanical neighbourhood via dense Farnebäck optical-flow
-  fields turned into divergence and magnitude maps (DefMaps).
+  A GPU-free pipeline that quantifies the mechanical neighbourhood of mitosis
+  events in brightfield time-lapse microscopy. It consumes the bounding-box
+  detections of a separate YOLOv5s detector and turns dense Farnebäck
+  optical-flow fields into divergence and magnitude maps (DefMaps), then
+  correlates them against detector confidence. This repository implements the
+  analysis stage only; the detector is a separate AGPL-3.0 component.
 keywords:
   - mitosis-detection
   - optical-flow
@@ -24,3 +26,26 @@ keywords:
 license: CC-BY-4.0
 version: 0.2.1  # x-release-please-version
 date-released: "2026-05-11"
+references:
+  - type: thesis
+    title: "Quantification and Modelling of Tissue Growth"
+    authors:
+      - given-names: Rayan
+        family-names: Chatt
+        orcid: "https://orcid.org/0009-0005-3800-7421"
+    institution:
+      name: "Heinrich Heine University Düsseldorf, Institut für Biomedizinische Physik"
+    year: 2025
+    notes: >-
+      Bachelor's thesis. Original German title: "Quantifizierung und
+      Modellierung von Gewebewachstum".
+  - type: software
+    title: "YOLOv5"
+    abbreviation: "Ultralytics YOLOv5"
+    authors:
+      - name: "Ultralytics"
+    repository-code: "https://github.com/ultralytics/yolov5"
+    license: AGPL-3.0
+    notes: >-
+      Object detector used in the separate detection stage of the thesis
+      pipeline. Not bundled with this repository.
