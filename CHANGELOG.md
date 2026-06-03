@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.2](https://github.com/rayanchatt/bachelor-thesis-flow/compare/v0.2.1...v0.2.2) (2026-06-02)
+
+
+### Documentation
+
+* scope repo as the analysis stage and link the thesis ([e54f593](https://github.com/rayanchatt/bachelor-thesis-flow/commit/e54f593707332019ad608a2de558a08080433162))
+* scope repo as the analysis stage and link the thesis ([a0d48c0](https://github.com/rayanchatt/bachelor-thesis-flow/commit/a0d48c03bce611f58db12ff3d606ac96ea65d26a))
+
 ## [0.2.1](https://github.com/rayanchatt/bachelor-thesis-flow/compare/v0.2.0...v0.2.1) (2026-05-12)
 
 
