@@ -16,7 +16,7 @@ jobs:
     name: Synthetic figures render and stay deterministic
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.3
 
       - name: Set up Python
         uses: actions/setup-python@v6
